@@ -1,0 +1,248 @@
+:root {
+    --black: #222222;
+    --pink-bkg: #F1E4E6;
+    --pink-color: #F09BA7;
+}
+
+.body {
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+.header__nav {
+    display: none;
+}
+
+.header {
+    background-color: var(--black);
+    min-height: 75px;
+}
+
+.header__wrp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__link {
+    text-decoration: none;
+}
+
+.header__logo-form-wrp {
+    display: flex;
+}
+
+.header__search {
+    margin: 0 0 0 41px;
+}
+
+.header__link {
+    margin: 0 0 0 33px;
+}
+
+.header__menu-bth {
+    border: 1px solid;
+    background-color: transparent;
+}
+
+.brand {
+    display: flex;
+    padding-bottom: 64px;
+}
+
+.brand__title-wrp {
+    flex-grow: 1;
+    background-color: var(--pink-bkg);
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 92px;
+}
+
+.brand__title {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    text-transform: uppercase;
+}
+
+.brand__subtitle {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    display: block;
+}
+
+.brand__subtitle-pink {
+    color: var(--pink-color);
+}
+
+.brand {
+    margin: 0 0 0 63px;
+}
+
+.sales {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sales__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sales__item {
+    width: 360px;
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+}
+
+.sales__item--woman {
+    background-image: url(../img/saleswoman.svg)
+}
+
+.sales__item-man {
+    background-image: url(../img/salesman.svg);
+    padding: 0;
+
+}
+
+.sales__item-kids {
+    background-image: url(../img/saleskids.svg)
+}
+
+.sales__item-shoes {
+    background-image: url(../img/accesories.svg);
+    background-size: cover;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.sales__item-text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    display: block;
+    text-transform: uppercase;
+}
+
+.sales__item-pink {
+    color: var(--pink-color);
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 22px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.products__title {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.products__subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+}
+
+.products__item-title {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    color: black;
+    text-align: left;
+
+}
+
+.products__item-price {
+    color: var(--pink-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+}
+
+.protucts__list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.protucts__item {
+    width: calc(33.333% - 20px);
+    display: flex;
+    margin: 30px 0 0;
+}
+
+.products__item-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.products__item-wrapper {
+    width: 100%;
+    height: 420px;
+}
+
+.products__info-wrapper {
+    padding: 25px 15px 20px 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.products__item-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.button-products {
+    border: 1px solid #FF6A6A;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+
+}
+
+.info__site {
+    background-color: black;
+}
