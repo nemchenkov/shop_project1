@@ -1,0 +1,149 @@
+@import "_config.scss";
+
+.registration {
+  background-color: $bg_color_light;
+  height: 100%;
+  min-height: 148px;
+  padding: 58px 0 0 0;
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $accent-color;
+    margin-bottom: 58px;
+  }
+  &__text {
+    width: 100%;
+    max-width: 652px;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    &_title{
+      font-weight: 300;
+      font-size: 1.5rem;
+      line-height: 29px;
+      text-transform: uppercase;
+      color: $title-color;
+
+    }
+    &_desc{
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 29px;
+      color: $title-color;
+
+    }
+    &_list{
+      li{
+        position: relative;
+        margin: 0 0 16px 40px;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: $title-color;
+        &::before{
+          content: url("../img/icons/check.svg");
+          position: absolute;
+          top: 0;
+          left: -40px;
+          background-size: cover;
+        }
+      }
+    }
+  }
+
+  &__wrapper {
+    background-color: #fff;
+    height: 100%;
+    min-height: 624px;
+  }
+}
+
+.form__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap:  128px;
+  padding: 64px 0;
+}
+
+.reg__form {
+  display: flex;
+  flex-direction: column;
+  &_title {
+    margin-bottom: 20px;
+    font-size: $fs_title;
+    color: $title-color;
+
+  }
+  &_name {
+    margin-bottom: 20px;
+  }
+  &_btn{
+    @extend %btn_prime;
+    background-color: $accent_color;
+    color: #fff;
+    text-transform: uppercase;
+    
+
+    transition: background-color 0.2s linear, transform 0.2s linear;
+    &:hover {
+      background-color: #db5757;
+    }
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+}
+
+.input__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+#first__name {
+  @extend %form_input_reg;
+}
+
+#last__name {
+  @extend %form_input_reg;
+  margin-bottom: 30px;
+}
+
+#your__email {
+  @extend %form_input_reg;
+}
+
+#your__password {
+  @extend %form_input_reg;
+  margin-bottom: 16px;
+}
+.password__desc{
+  font-size: $fs-main;
+  color: #B1B1B1;
+  max-width: 360px;
+  margin-bottom: 30px;
+}
+.radio__wrapper{
+  display: flex;
+  gap: 8px;
+  input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+
+    border: 2px solid $accent_color;
+    transition: 0.2s all linear;
+    outline: none;
+    margin-right: 5px;
+
+    position: relative;
+    top: 4px;
+    &:checked{
+      border: 6px solid $accent_color;
+    }
+  }
+}
